@@ -48,11 +48,34 @@
             font-size: 25px;
             text-transform: uppercase;
         }
+		
+		.info-section {
+			font-size: 14px;
+			color: gray;
+			text-align: left;
+			margin: 0px;
+			padding: 0px;
+			text-transform: uppercase;
+		}
+		
+		@media and all (max-width: 340px;) {
+			h3 {
+				font-size: 20px;
+			}
+			
+			input {
+				font-size: 15px;
+			}
+		}
     </style>
 </head>
 
 <body>
 
+	<div class="info-section">
+		versiya beta 0.2
+	</div>
+	
     <h3>
         İllik qiymət hesablayıcı
     </h3>
@@ -61,14 +84,14 @@
 
     <div class="box">
         <div class="element-box">
-            <label for="number1">1-ci qiymət :</label>
+            <label for="number1">1-ci yarım il :</label>
             <br />
-            <input type="text" name="number1" id="number1" placeholder="1-ci qiymət...">
+            <input type="text" name="number1" id="number1" placeholder="1-ci yarım il..." autocomplete="off">
         </div>
         <div class="element-box">
-            <label for="number2">2-ci qiymət :</label>
+            <label for="number2">2-ci yarım il :</label>
             <br />
-            <input type="text" name="number2" id="number2" placeholder="2-ci qiymət...">
+            <input type="text" name="number2" id="number2" placeholder="2-ci yarım il..." autocomplete="off">
         </div>
         <div class="element-box">
             <button onclick="sum()">
@@ -89,7 +112,7 @@
 				@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 			</style>
             <div style="text-align: center; font-size: 30px; font-weight: bold; margin-bottom: 30px; font-family: 'Inter', sans-serif; color: gray; margin-top: 30px;">
-                İllik qiymət : ${finalSum}
+                Yekun : ${finalSum}
             </div>
             <div style="text-align: center;">
                 <button onclick="reset()" style="background: orange; cursor: pointer; padding: 10px; border: 0; border-radius: 0; color: white; font-weight: bold; font-size: 25px; text-transform: uppercase;">
